@@ -52,7 +52,7 @@ async function startManualAuthorisation(consentId) {
 		console.log('Once complete, copy the redirected URL to continue...');
 		console.log();
 
-		return await waitForClipboardStartingWith(`https://${config.teamDomain}/redirect`);
+		return await waitForClipboardStartingWith(`http://${config.teamDomain}/redirect`);
 	});
 }
 
